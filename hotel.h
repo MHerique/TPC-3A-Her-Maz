@@ -1,16 +1,18 @@
 #include <iostream>
 #include <vector>
+#include "Chambre.h"
+#include <string>
 
 #ifndef HOTEL_H
 #define HOTEL_H
 
 class Hotel{
 	public :
-	Hotel(std::string nom ; std::string identifiant ; std::string ville ; int nombre_chambre) ;
+	Hotel(std::string nom , std::string identifiant , std::string ville , int nombre_chambre);
 	std::string getId() const;
 	std::string getNom() const;
 	std::string getVille() const;
-	Chambre getChambre(int numero_chambre) ;
+	Chambre* getChambre(int numero_chambre) ;
 
 	private :
 	const std::string m_identifiant_hotel ;
