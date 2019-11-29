@@ -13,7 +13,6 @@ class Hotel{
 	std::string getNom() const;
 	std::string getVille() const;
 	Chambre* getChambre(int numero_chambre) ;
-
 	private :
 	const std::string m_identifiant_hotel ;
 	const std::string m_ville ;	
